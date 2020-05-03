@@ -2,6 +2,7 @@ from scipy.stats import spearmanr
 from scipy.stats import pearsonr
 
 def f1_metric(predicted, labeled):
+
     if isinstance(predicted[0], (list, set)):
         counter = {
             "TP": 0,
